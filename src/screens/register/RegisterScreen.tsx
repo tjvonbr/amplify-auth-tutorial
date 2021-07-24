@@ -11,6 +11,7 @@ import RegisterName from "./components/RegisterName";
 import RegisterEmail from "./components/RegisterEmail";
 import RegisterPassword from "./components/RegisterPassword";
 import styles from "./RegisterStyles";
+import { colors } from "../../styles/colors.ts";
 
 const RegisterScreen = ({ navigation }) => {
   const [step, setStep] = React.useState(1);
@@ -19,7 +20,7 @@ const RegisterScreen = ({ navigation }) => {
   const [password, setPassword] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
 
-  const toLanding = () => console.log("Landing!");
+  const toLanding = () => navigation.navigate("Landing");
 
   // Handles moving forward and back within registration form
   const nextStep = () => setStep(step + 1);
@@ -63,7 +64,9 @@ const RegisterScreen = ({ navigation }) => {
         {renderStep()}
         <View style={styles.btnContainer}>
           <CustomButton
+            backgroundColor={colors.blue09}
             btnText={step != 3 ? "Continue" : "Submit"}
+            color={colors.white}
             handlePress={step != 3 ? nextStep : signUp}
           />
         </View>

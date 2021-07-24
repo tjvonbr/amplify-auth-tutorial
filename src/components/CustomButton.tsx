@@ -3,14 +3,23 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { colors } from "../styles/colors";
 
 type CustomButtonProps = {
+  backgroundColor: string;
   btnText: string;
+  color: string;
   handlePress: any;
 };
 
-const CustomButton = ({ btnText, handlePress }: CustomButtonProps) => {
+const CustomButton = ({
+  backgroundColor,
+  btnText,
+  color,
+  handlePress,
+}: CustomButtonProps) => {
   return (
-    <TouchableOpacity style={[styles.base]} onPress={handlePress}>
-      <Text style={styles.baseText}>{btnText}</Text>
+    <TouchableOpacity
+      style={[styles.base, { backgroundColor }]}
+      onPress={handlePress}>
+      <Text style={[styles.baseText, { color }]}>{btnText}</Text>
     </TouchableOpacity>
   );
 };
