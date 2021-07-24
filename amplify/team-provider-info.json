@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-whiteboardtutorial-dev-155652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::641107864585:role/amplify-whiteboardtutorial-dev-155652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::641107864585:role/amplify-whiteboardtutorial-dev-155652-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-whiteboardtutorial-dev-155652-deployment",
+      "UnauthRoleName": "amplify-whiteboardtutorial-dev-155652-unauthRole",
+      "StackName": "amplify-whiteboardtutorial-dev-155652",
+      "StackId": "arn:aws:cloudformation:us-east-1:641107864585:stack/amplify-whiteboardtutorial-dev-155652/58cd1e40-eb2f-11eb-a0df-0e508885cec5",
+      "AmplifyAppId": "dyc0bdt2f97oh"
+    },
+    "categories": {
+      "auth": {
+        "whiteboardtutorial71e314ff": {}
+      }
+    }
+  }
+}
