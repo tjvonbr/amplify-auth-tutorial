@@ -30,6 +30,7 @@ const RegisterPassword = ({
           keyboardType={"default"}
           returnKeyType={"done"}
           autoCapitalize={"none"}
+          secureTextEntry={true}
         />
       </View>
     </View>

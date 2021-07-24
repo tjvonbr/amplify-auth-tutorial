@@ -1,5 +1,10 @@
 import * as React from "react";
-import { SafeAreaView, View } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Platform,
+  SafeAreaView,
+  View,
+} from "react-native";
 import CustomButton from "../../components/CustomButton";
 import CustomNavHeader from "../../components/CustomNavHeader";
 import RegisterName from "./components/RegisterName";
@@ -48,17 +53,21 @@ const RegisterScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <CustomNavHeader
-        iconName={step === 1 ? "close" : "keyboard-backspace"}
-        handlePress={step === 1 ? toLanding : prevStep}
-      />
-      {renderStep()}
-      <View style={styles.btnContainer}>
-        <CustomButton
-          btnText={step != 3 ? "Continue" : "Submit"}
-          handlePress={step != 3 ? nextStep : signUp}
+      <KeyboardAvoidingView
+        style={styles.keyboardView}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}>
+        <CustomNavHeader
+          iconName={step === 1 ? "close" : "keyboard-backspace"}
+          handlePress={step === 1 ? toLanding : prevStep}
         />
-      </View>
+        {renderStep()}
+        <View style={styles.btnContainer}>
+          <CustomButton
+            btnText={step != 3 ? "Continue" : "Submit"}
+            handlePress={step != 3 ? nextStep : signUp}
+          />
+        </View>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };

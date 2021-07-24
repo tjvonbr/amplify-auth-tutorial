@@ -8,6 +8,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  keyboardView: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   contentContainer: {
     flex: 1,
     width: "90%",
@@ -34,9 +40,8 @@ const styles = StyleSheet.create({
     borderRadius: 7,
   },
   btnContainer: {
-    flex: 1,
     width: "90%",
-    marginBottom: 20,
+    marginBottom: 25,
     alignItems: "flex-start",
     justifyContent: "flex-end",
   },

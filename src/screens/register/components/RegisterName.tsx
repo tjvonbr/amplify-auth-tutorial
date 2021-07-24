@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { View, Text, KeyboardAvoidingView, Platform } from "react-native";
 import CustomInput from "../../../components/CustomInput";
 import styles from "../RegisterStyles";
 

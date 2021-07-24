@@ -11,6 +11,7 @@ const CustomInput = ({
   multiline,
   keyboardType,
   returnKeyType,
+  secureTextEntry,
 }: TextInputProps) => {
   const [isFocused, setIsFocused] = React.useState(false);
 
@@ -24,6 +25,7 @@ const CustomInput = ({
       multiline={multiline}
       keyboardType={keyboardType}
       returnKeyType={returnKeyType}
+      secureTextEntry={secureTextEntry}
       onFocus={() => setIsFocused(true)}
       onBlur={() => setIsFocused(false)}
     />
@@ -31,13 +33,7 @@ const CustomInput = ({
 };
 
 const styles = StyleSheet.create({
-  focusedInput: {
-    borderColor: colors.blue09,
-    shadowColor: colors.blue09,
-    shadowOffset: { width: 0, height: 0 },
-    shadowRadius: 10,
-    shadowOpacity: 0.5,
-  },
+  focusedInput: { borderColor: colors.blue09 },
   unfocusedInput: { borderColor: colors.inputBorderGray },
 });
 
