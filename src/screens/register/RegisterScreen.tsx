@@ -11,7 +11,7 @@ import RegisterName from "./components/RegisterName";
 import RegisterEmail from "./components/RegisterEmail";
 import RegisterPassword from "./components/RegisterPassword";
 import styles from "./RegisterStyles";
-import { colors } from "../../styles/colors.ts";
+import { colors } from "../../styles/colors";
 
 const RegisterScreen = ({ navigation }) => {
   const [step, setStep] = React.useState(1);

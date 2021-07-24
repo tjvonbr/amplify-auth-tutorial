@@ -11,12 +11,10 @@ type RegisterEmailProps = {
 const RegisterEmail = ({ email, handleEmailChange }: RegisterEmailProps) => {
   return (
     <View style={styles.contentContainer}>
-      <View style={{ margin: 10 }}>
-        <Text style={styles.title}>Enter your email</Text>
-        <Text style={styles.subtitle}>
-          Which email address would you like to sign up with?
-        </Text>
-      </View>
+      <Text style={styles.title}>Enter your email</Text>
+      <Text style={styles.subtitle}>
+        Which email address would you like to sign up with?
+      </Text>
       <View>
         <CustomInput
           style={styles.input}

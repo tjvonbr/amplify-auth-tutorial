@@ -11,10 +11,8 @@ type RegisterNameProps = {
 const RegisterName = ({ firstName, handleTextChange }: RegisterNameProps) => {
   return (
     <View style={styles.contentContainer}>
-      <View style={{ margin: 10 }}>
-        <Text style={styles.title}>Welcome!</Text>
-        <Text style={styles.subtitle}>What should we call you?</Text>
-      </View>
+      <Text style={styles.title}>Welcome!</Text>
+      <Text style={styles.subtitle}>What should we call you?</Text>
       <View>
         <CustomInput
           style={styles.input}

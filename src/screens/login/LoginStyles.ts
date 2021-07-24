@@ -4,31 +4,46 @@ import { colors } from "../../styles/colors";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
-    justifyContent: "center",
     alignItems: "center",
+    backgroundColor: colors.white,
   },
   keyboardView: {
     flex: 1,
+    width: "90%",
+  },
+  customHeader: {
     width: "100%",
+    height: 50,
     justifyContent: "center",
+    alignItems: "flex-start",
+  },
+  innerContainer: {
+    width: "100%",
     alignItems: "center",
   },
   contentContainer: {
-    flex: 1,
-    width: "90%",
+    flex: 3,
+    width: "100%",
+    alignItems: "flex-start",
   },
   title: {
-    marginBottom: 2,
-    fontSize: 28,
+    marginBottom: 10,
+    color: colors.black,
     fontWeight: "700",
-    color: "black",
+    fontSize: 28,
   },
   subtitle: {
-    fontSize: 15,
-    fontWeight: "500",
-    color: "gray",
     marginBottom: 25,
+    color: "gray",
+    fontWeight: "500",
+    fontSize: 15,
+  },
+  btnContainer: {
+    flex: 1,
+    width: "100%",
+    marginBottom: 20,
+    alignItems: "flex-start",
+    justifyContent: "flex-end",
   },
   input: {
     width: "100%",
@@ -39,12 +54,6 @@ const styles = StyleSheet.create({
     borderColor: colors.inputBorderGray,
     borderWidth: 2,
     borderRadius: 7,
-  },
-  btnContainer: {
-    width: "90%",
-    marginBottom: 25,
-    alignItems: "flex-start",
-    justifyContent: "flex-end",
   },
 });
 

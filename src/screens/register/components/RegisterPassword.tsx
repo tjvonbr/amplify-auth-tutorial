@@ -14,12 +14,8 @@ const RegisterPassword = ({
 }: RegisterPasswordProps) => {
   return (
     <View style={styles.contentContainer}>
-      <View style={{ margin: 10 }}>
-        <Text style={styles.title}>Create a password</Text>
-        <Text style={styles.subtitle}>
-          Please enter a safe, secure password
-        </Text>
-      </View>
+      <Text style={styles.title}>Create a password</Text>
+      <Text style={styles.subtitle}>Please enter a safe, secure password</Text>
       <View>
         <CustomInput
           style={styles.input}
